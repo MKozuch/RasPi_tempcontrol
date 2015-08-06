@@ -10,4 +10,7 @@ Time, temperature and calcuated PWM value are logged to TClog.log file.
 
 NOTE: the fan must NOT be driven directly by GPIO pin, the usage of Darlington pair is suggested.
 
+NOTE: pin 1 (BCM_GPIO 18) is shared with RasPi audio system, that means that it is not possible to use both 3.5mm 
+audio jack output and PWM driving at the same time
+
 Requires Python3 and wiringpi2 library 
